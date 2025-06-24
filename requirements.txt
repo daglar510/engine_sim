@@ -1,0 +1,9 @@
+streamlit
+pandas
+altair
+numpy
+matplotlib
+pyvista
+stpyvista
+vtk
+scipy 
