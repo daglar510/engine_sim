@@ -11,9 +11,9 @@ Change any parameter—bore, stroke, RPM, boost, ambient conditions—and both t
 3. [Folder Structure](#folder-structure)  
 4. [Physics Model](#physics-model)  
 5. [Code Walk‑Through](#code-walk-through)  
-6. [Calibration & Tuning](#calibration--tuning)  
+6. [Calibration & Tuning](#calibration-and-tuning)  
 7. [Typical Use Cases](#typical-use-cases)  
-8. [Road‑map](#road-map)  
+8. [Road‑map](#roadmap)  
 9. [References](#references)  
 10. [License](#license)
 
@@ -65,13 +65,13 @@ Browse to <http://localhost:8501> and start dragging sliders.
 
 ## Physics Model
 
-### 1&nbsp;·&nbsp;Volumetric&nbsp;Efficiency  
+### 1 · Volumetric Efficiency
 
 $$
-\eta_v(RPM) = 0.60 + 0.40
+\eta_v(\mathrm{RPM}) = 0.60 + 0.40\,
 \begin{cases}
-\displaystyle \exp\!\Bigl[-\tfrac12\Bigl(\tfrac{RPM-R_{pk}}{\sigma_{\text{low}}}\Bigr)^2\Bigr], & RPM < R_{pk} \\[6pt]
-\displaystyle \exp\!\Bigl[-\tfrac12\Bigl(\tfrac{RPM-R_{pk}}{\sigma_{\text{high}}}\Bigr)^2\Bigr], & RPM \ge R_{pk}
+\displaystyle \exp\!\left[-\tfrac{1}{2}\left(\tfrac{\mathrm{RPM}-R_{pk}}{\sigma_{\text{low}}}\right)^2\right], & \text{RPM} < R_{pk} \\
+\displaystyle \exp\!\left[-\tfrac{1}{2}\left(\tfrac{\mathrm{RPM}-R_{pk}}{\sigma_{\text{high}}}\right)^2\right], & \text{RPM} \ge R_{pk}
 \end{cases}
 $$
 
@@ -138,7 +138,7 @@ $$
 
 ---
 
-## Code Walk‑Through
+## Code Walk Through
 
 | File | Purpose | Key entry‑points |
 |------|---------|------------------|
@@ -148,7 +148,7 @@ $$
 
 ---
 
-## Calibration & Tuning
+## Calibration and Tuning
 
 | Goal | Parameter(s) | Typical range |
 |------|--------------|---------------|
@@ -168,7 +168,7 @@ $$
 
 ---
 
-## Road‑map
+## Roadmap
 
 | Milestone | Status |
 |-----------|--------|
