@@ -113,7 +113,8 @@ $$
 FMEP = A + B\,RPM + C\,RPM^2
 $$
 
-(default \(A=30\,\text{kPa},\;B=1.5,\;C=2\times10^{-4}\))
+*(defaults&nbsp;A = 30 kPa, B = 1.5, C = 2 × 10⁻⁴)*
+
 
 $$
 \eta_\text{mech}=1-\frac{FMEP\,V_d\,RPM/120}{P_b}
