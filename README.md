@@ -65,12 +65,12 @@ Browse to <http://localhost:8501> and start dragging sliders.
 
 ## Physics Model
 
-### 1 · Volumetric Efficiency  
+### 1 · Volumetric Efficiency  
 
 $$
 \eta_v(RPM)=0.60+0.40\begin{cases}
-\exp\!\Bigl[-\tfrac12\left(\tfrac{RPM-R_{pk}}{\sigma_{\text{low}}}\right)^2\Bigr], & RPM<R_{pk} \\\\
-\exp\!\Bigl[-\tfrac12\left(\tfrac{RPM-R_{pk}}{\sigma_{\text{high}}}\right)^2\Bigr], & RPM\ge R_{pk}
+\exp\!\Bigl[-\tfrac12\!\left(\tfrac{RPM-R_{pk}}{\sigma_{\text{low}}}\right)^2\Bigr], & RPM<R_{pk} \\[6pt]
+\exp\!\Bigl[-\tfrac12\!\left(\tfrac{RPM-R_{pk}}{\sigma_{\text{high}}}\right)^2\Bigr], & RPM\ge R_{pk}
 \end{cases}
 $$
 
